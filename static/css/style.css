@@ -12309,11 +12309,11 @@ ol.commentlist li .star-rating {
     z-index: 999999999;
     background-image: url(../images/loading.gif);
     background-repeat: no-repeat;
-    background-size: 80px;
+    background-size: 160px;
     background-position: center;
 }
 #loading-area.solar-loading{
-	 background-size: 280px;
+	background-size: 280px;
 	background-image: url(../images/solar.gif);
 }
 /* ------------------------------------------------
