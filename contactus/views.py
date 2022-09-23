@@ -5,6 +5,6 @@ import json
 
 def gallery(request):
     context = {
-        "title": "Gallery-WeddingCarRide"
+        "title": "ContactUs-WeddingCarRide"
     }
-    return render(request, "gallery/home.html", context=context)
+    return render(request, "contactus/home.html", context=context)

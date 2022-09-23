@@ -5,6 +5,6 @@ import json
 
 def home(request):
     context = {
-        "title": "Home-WeddingCarRide"
+        "title": "Tours-WeddingCarRide"
     }
-    return render(request, "home/home.html", context=context)
+    return render(request, "tours/home.html", context=context)

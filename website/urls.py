@@ -10,6 +10,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('gallery/', include('gallery.urls')),
+    path('contactus/', include('contactus.urls')),
+    path('tours/', include('tours.urls')),
 
     url(r'^static/(?P<path>.*)$', serve,
         {'document_root': settings.STATIC_ROOT})
