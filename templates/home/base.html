@@ -52,6 +52,55 @@
     <div class="page-wraper">
         <div id="loading-area"></div>
 
+        <!-- header -->
+        <header class="site-header mo-left header-transparent header navstyle3">
+            <!-- main header -->
+            <div class="sticky-header main-bar-wraper navbar-expand-lg">
+                <div class="main-bar clearfix ">
+                    <div class="container clearfix">
+                        <!-- website logo -->
+                        <div class="logo-header mostion logo-white">
+                            <a href="{%url 'home'%}"><img src="{%static 'images/logo-dark.png'%}" alt=""></a>
+                        </div>
+                        <!-- nav toggle button -->
+                        <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <!-- main nav -->
+                        <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                            <div class="logo-header d-md-block d-lg-none">
+                                <a href="index.html"><img src="{%static 'images/logo-dark.png'%}" alt=""></a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="has-mega-menu"> <a href="javascript:;">Home</a></li>
+                            </ul>
+                            <div class="dlab-social-icon">
+                                <ul>
+                                    <li><a class="site-button facebook sharp-sm fa fa-facebook"
+                                            href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button twitter sharp-sm fa fa-twitter"
+                                            href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button linkedin sharp-sm fa fa-linkedin"
+                                            href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button instagram sharp-sm fa fa-instagram"
+                                            href="javascript:void(0);"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header END -->
+        </header>
+        <!-- header END -->
         {%block header%}{%endblock%}
 
         {% block body %}{% endblock %}
@@ -106,15 +155,17 @@
     <script src="{%static 'js/rev.slider.js' %}"></script>
 
     <!-- TYPEWRITER AND COMING SOON ADD ON -->
-    <script src="{%static 'plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js'%}"></script>
-    <script src="{%static 'plugins/revolution/revolution-addons/countdown/revolution.addon.countdown.min.js'%}"></script>
+    <script
+        src="{%static 'plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js'%}"></script>
+    <script
+        src="{%static 'plugins/revolution/revolution-addons/countdown/revolution.addon.countdown.min.js'%}"></script>
 
     <script>
         jQuery(document).ready(function () {
-			'use strict';
-			dz_rev_slider_5();
-			$('.lazy').Lazy();
-		}); /*ready*/
+            'use strict';
+            dz_rev_slider_5();
+            $('.lazy').Lazy();
+        }); /*ready*/
     </script>
 
     {% block script %} {% endblock %}
