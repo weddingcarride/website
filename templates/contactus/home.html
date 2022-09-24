@@ -54,9 +54,7 @@
                                         <span class="icon-sm text-primary"><i class="ti-email"></i></span> 
                                         E-mail
                                     </h5>
-                                    <p class="m-b0">info@example.com</p>
-                                    <p class="m-b0">hr@example.com</p>
-                                    <p class="m-b0">support@example.com</p>
+                                    <p class="m-b0">admin@weddingcarride.com</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +73,8 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 m-b30">
-                    <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
+                    <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s" method="POST" action="">
+                        {%csrf_token%}
                         <h3 class="title-box font-weight-300 m-t0 m-b10">Book Us</h3>
                         <p>Order will be responsed within 5 minutes</p>
                         <div class="row">
@@ -83,7 +82,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-user text-primary"></i></span>
-                                        <input name="dzName" type="text" required class="form-control" placeholder="First Name">
+                                        <input name="name" type="text" required class="form-control" placeholder="First Name">
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +90,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-mobile text-primary"></i></span>
-                                        <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Phone">
+                                        <input name="phone" type="text" required class="form-control" placeholder="Phone">
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +98,7 @@
                                 <div class="form-group">
                                     <div class="input-group"> 
                                         <span class="input-group-addon"><i class="ti-email text-primary"></i></span>
-                                        <input name="dzEmail" type="email" class="form-control" required  placeholder="Your Email Id" >
+                                        <input name="email" type="email" class="form-control" required  placeholder="Your Email Id" >
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +106,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-agenda text-primary"></i></span>
-                                        <textarea name="dzMessage" rows="4" class="form-control" required placeholder="Tell us about your need"></textarea>
+                                        <textarea name="msg" rows="4" class="form-control" required placeholder="Tell us about your need"></textarea>
                                     </div>
                                 </div>
                             </div>
