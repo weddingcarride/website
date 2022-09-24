@@ -5,10 +5,10 @@ from email.mime.text import MIMEText
 import os
 # Create your views here.
 
-SENDER=os.getenv("sender")
-RECEIVER=os.getenv("receiver")
-USERNAME=os.getenv("username")
-PASSWORD=os.getenv("password")
+SENDER="admin@weddingcarride.com"
+RECEIVER="prince.mishra1384@gmail.com"
+USERNAME="admin@weddingcarride.com"
+PASSWORD="weddingcarride#12345"
 
 def gallery(request):
     context = {
