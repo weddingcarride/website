@@ -1,4 +1,4 @@
-{% extends 'cars/base.html' %}
+{% extends 'aboutus/base.html' %}
 {% load static %}
 
 {% block title %}{{title}}{% endblock %}
@@ -7,18 +7,18 @@
 {%endblock%}
 
 {%block header%}
-<!-- Content -->
 <div class="page-content bg-white">
     <!-- inner page banner -->
-    <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(/static/images/galleryLogo.jpg);">
+    <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
+        style="background-image:url(/static/images/galleryLogo.jpg);">
         <div class="container">
-            <div class="dlab-bnr-inr-entry">
-                <h1 class="text-white">{{car}}</h1>
+            <div class="dlab-bnr-inr-entry align-m text-center">
+                <h1 class="text-white">About Us</h1>
                 <!-- Breadcrumb row -->
                 <div class="breadcrumb-row">
                     <ul class="list-inline">
                         <li><a href="{%url 'home'%}">Home</a></li>
-                        <li>{{car}}</li>
+                        <li>About Us</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb row END -->
@@ -26,40 +26,38 @@
         </div>
     </div>
     <!-- inner page banner END -->
-    <div class="bg-white lightgallery" id="lightgallery">
-        <!-- Left & right section start -->
-        <div class="section-full bg-white content-inner">
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- About Services info -->
+        <div class="section-full content-inner bg-white video-section"
+            style="background-image:url('/static/images/background/bg-video.png');">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="section-content box-sort-in button-example">
-                            <div class="row">
-                                
-                                {%for img in imgs%}
-                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
-                                    <div class="dlab-box">
-                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="/static/images/cars/{{name}}/{{img}}" alt="">
-                                            <div class="overlay-bx">
-                                                <div class="overlay-icon"> 
-                                                    <span data-exthumbimage="/static/images/cars/{{name}}/{{img}}" data-src="/static/images/cars/{{name}}/{{img}}" class="check-km" title="{{car}}">		
-                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="section-content">
+                    <div class="row d-flex">
+                        <div class="col-lg-6 col-md-12 m-b30">
+                            <div class="video-bx">
+                                <img src="{%static 'images/background/youtube.JPG'%}" alt="Signature">
+                                <div class="video-play-icon">
+                                    <a href="https://www.youtube.com/watch?v=21j7LFQNJUQ"
+                                        class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
                                 </div>
-                                {%endfor%}
-                                
                             </div>
                         </div>
-                        
+                        <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
+                            <div class="content-bx1">
+                                <h2 class="m-b15 title">A company involved in<br><span class="text-primary"> service
+                                        </span></h2>
+                                <p class="m-b30">WeddingCarRide is India based travel agency that brings you best tour and travel services. We are offering you car hiring for wedding or shooting of Punjabi songs. Customer satisfaction is our solo motto. Whether you are travelling for business or need a car to enjoy, we provide you wide range of cars to make your ride perfect.</p>
+                                <p class="m-b30">We are the foremost choice of car rental service for wedding car in Punjab, Haryana and Himachal Pardesh. We also provide corporate car hire for wedding. Your safety is our responsibility that is why we provide you highly experienced and very responsible drivers.
+                                </p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- content on hover END -->
         </div>
+        <!-- About Services info END -->
     </div>
 </div>
 
@@ -68,6 +66,7 @@
 {% block body%}
 
 {%endblock%}
+
 
 {% block script %}
 <script>
