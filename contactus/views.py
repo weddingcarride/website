@@ -6,7 +6,7 @@ import os
 # Create your views here.
 
 SENDER="admin@weddingcarride.com"
-RECEIVER="prince.mishra1384@gmail.com"
+RECEIVER="ggrewal2014@gmail.com"
 USERNAME="admin@weddingcarride.com"
 PASSWORD="weddingcarride#12345"
 
