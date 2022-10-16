@@ -8,3 +8,6 @@ def home(request):
         "title": "Home-WeddingCarRide"
     }
     return render(request, "home/home.html", context=context)
+
+def yandex(request):
+    return render(request, "home/yandex.html")
