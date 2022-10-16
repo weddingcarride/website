@@ -41,6 +41,17 @@
     <link rel="stylesheet" type="text/css" href="{%static 'plugins/revolution/revolution/css/revolution.min.css'%}">
     <link rel="canonical" href="{%url 'home'%}" />
 
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCR7J6ZSSV">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NCR7J6ZSSV');
+    </script>
+
     <!-- here css will come -->
     {% block css %}{% endblock %}
 </head>
